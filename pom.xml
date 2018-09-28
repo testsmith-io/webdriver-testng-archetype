@@ -11,8 +11,7 @@
     <name>WebDriver TestNG Archetype</name>
     <description>Generates a basic skeleton project with Selenium WebDriver, WebDrivermanager, TestNG and Allure
     </description>
-    <!-- FIXME change it to the project's website -->
-    <url>http://www.example.com</url>
+    <url>https://github.com/testsmith-io/webdriver-testng-archetype</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
