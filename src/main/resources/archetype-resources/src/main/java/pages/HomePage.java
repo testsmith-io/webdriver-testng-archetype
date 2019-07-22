@@ -10,7 +10,7 @@ import org.openqa.selenium.support.FindBy;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class HomePage extends AbstractPage {
+public class HomePage extends AbstractPage<HomePage> {
 
     @FindBy(className = "h000-mktg")
     private WebElement slogan;
