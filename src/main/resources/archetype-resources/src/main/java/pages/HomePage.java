@@ -7,6 +7,7 @@ import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import ${package}.properties.Environment;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -22,7 +23,7 @@ public class HomePage extends AbstractPage<HomePage> {
     @Step("Open the Github homepage")
     @Override
     protected void load() {
-        driver.get("http://www.github.com");
+        driver.get(Environment.getProperties().url());
     }
 
     @Override

@@ -10,14 +10,15 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <webdrivermanager.version>3.4.0</webdrivermanager.version>
-        <selenium-java.version>4.0.0-alpha-1</selenium-java.version>
-        <testng.version>6.14.3</testng.version>
+        <webdrivermanager.version>3.7.1</webdrivermanager.version>
+        <selenium-java.version>4.0.0-alpha-2</selenium-java.version>
+        <testng.version>7.0.0</testng.version>
         <logback-classic.version>1.2.3</logback-classic.version>
-        <allure-testng.version>2.11.0</allure-testng.version>
+        <allure-testng.version>2.13.0</allure-testng.version>
+        <owner.version>1.0.9</owner.version>
 
         <aspectj.version>1.9.1</aspectj.version>
-        <assertj-core.version>3.12.2</assertj-core.version>
+        <assertj-core.version>3.13.2</assertj-core.version>
         <ngwebdriver.version>1.1.4</ngwebdriver.version>
 
         <seleniumGrid>false</seleniumGrid>
@@ -62,6 +63,11 @@
             <groupId>org.assertj</groupId>
             <artifactId>assertj-core</artifactId>
             <version>${assertj-core.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.aeonbits.owner</groupId>
+            <artifactId>owner</artifactId>
+            <version>${owner.version}</version>
         </dependency>
     </dependencies>
 
