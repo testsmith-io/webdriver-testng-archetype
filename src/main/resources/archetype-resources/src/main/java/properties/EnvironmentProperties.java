@@ -1,7 +1,7 @@
 #set( $symbol_pound = '#' )
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
-package ${package}.selenium.properties;
+package ${package}.properties;
 
 import org.aeonbits.owner.Config;
 import org.aeonbits.owner.Config.Sources;
