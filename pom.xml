@@ -5,7 +5,7 @@
 
     <groupId>io.testsmith</groupId>
     <artifactId>webdriver-testng-archetype</artifactId>
-    <version>0.16-SNAPSHOT</version>
+    <version>0.16</version>
     <packaging>maven-archetype</packaging>
 
     <name>WebDriver TestNG Archetype</name>
@@ -42,7 +42,7 @@
         <connection>scm:git:git@github.com:testsmith-io/webdriver-testng-archetype.git</connection>
         <developerConnection>scm:git:git@github.com:testsmith-io/webdriver-testng-archetype.git</developerConnection>
         <url>https://github.com/testsmith-io/webdriver-testng-archetype</url>
-      <tag>webdriver-testng-archetype-0.7</tag>
+      <tag>webdriver-testng-archetype-0.16</tag>
   </scm>
 
     <developers>
