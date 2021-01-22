@@ -5,7 +5,7 @@
 
     <groupId>io.testsmith</groupId>
     <artifactId>webdriver-testng-archetype</artifactId>
-    <version>0.21-SNAPSHOT</version>
+    <version>0.20-SNAPSHOT</version>
     <packaging>maven-archetype</packaging>
 
     <name>WebDriver TestNG Archetype</name>
@@ -17,16 +17,16 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>13</maven.compiler.source>
         <maven.compiler.target>13</maven.compiler.target>
-        <archetype.version>3.2.0</archetype.version>
+        <archetype.version>3.1.2</archetype.version>
 
         <!-- plugin versions -->
-        <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
-        <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
-        <maven-javadoc-plugin.version>3.2.0</maven-javadoc-plugin.version>
-        <maven-resources-plugin.version>3.2.0</maven-resources-plugin.version>
-        <maven-release-plugin.version>2.5.3</maven-release-plugin.version>
-        <maven-source-plugin.version>3.2.1</maven-source-plugin.version>
-        <nexus-staging-maven-plugin.version>1.6.8</nexus-staging-maven-plugin.version>
+        <maven-compiler-plugin.version>3.1</maven-compiler-plugin.version>
+        <maven-gpg-plugin.version>1.5</maven-gpg-plugin.version>
+        <maven-javadoc-plugin.version>2.9.1</maven-javadoc-plugin.version>
+        <maven-resources-plugin.version>2.6</maven-resources-plugin.version>
+        <maven-release-plugin.version>2.5</maven-release-plugin.version>
+        <maven-source-plugin.version>2.2.1</maven-source-plugin.version>
+        <nexus-staging-maven-plugin.version>1.6.5</nexus-staging-maven-plugin.version>
     </properties>
 
     <licenses>

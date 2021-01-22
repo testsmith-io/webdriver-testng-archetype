@@ -25,7 +25,8 @@ under the License.
                       name="${artifactId}">
 
     <fileSets>
-        <fileSet encoding="UTF-8">
+        <fileSet filtered="true" packaged="false" encoding="UTF-8">
+            <directory/>
             <includes>
                 <include>README.md</include>
             </includes>
