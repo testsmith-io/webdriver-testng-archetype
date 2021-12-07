@@ -1,6 +1,6 @@
 # WebDriver TestNG Project
 
-This project is generated from an archetype. It exists out of TestNG, Selenium WebDriver, WebDriver Manager, Allure and OWNER as the main dependendies.
+This project is generated from an archetype. It exists out of TestNG, Selenium WebDriver, WebDriver Manager, Allure and OWNER as the main dependencies.
 
 
 ## Run tests
@@ -12,7 +12,11 @@ This project is generated from an archetype. It exists out of TestNG, Selenium W
 
 `mvn allure:report`
 
-## Check for dependecy updates
+## Serve report
+
+`mvn allure:serve`
+
+## Check for dependency updates
 
 `mvn versions:display-dependency-updates`
 

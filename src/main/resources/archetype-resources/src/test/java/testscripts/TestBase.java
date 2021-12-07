@@ -4,15 +4,24 @@
 package ${package}.testscripts;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.testsmith.support.listeners.*;
+import ${package}.utils.ScreenshotListener;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.events.EventFiringDecorator;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Listeners;
 
-abstract class TestBase {
+@Listeners(ScreenshotListener.class)
+public abstract class TestBase {
 
-    protected WebDriver driver;
+    private static final ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+
+    public WebDriver getDriver() {
+        return driver.get();
+    }
 
     @BeforeSuite
     public void setupSuite() {
@@ -21,12 +30,20 @@ abstract class TestBase {
 
     @BeforeClass
     public void setup() {
-        driver = new ChromeDriver();
+        WebDriver originalDriver = new ChromeDriver();
+        driver.set(new EventFiringDecorator(
+                new WebDriverLoggingListener(),
+                new SavePageSourceOnExceptionListener(originalDriver, "target/log/pagesources"),
+                new SaveScreenshotOnExceptionListener(originalDriver, "target/log/screenshots"),
+                new WebDriverLoggingListener(),
+                new HighlightElementsListener(),
+                new WebDriverWaitListener(originalDriver)
+        ).decorate(originalDriver));
     }
 
     @AfterClass
     public void teardown() {
-        driver.quit();
+        getDriver().quit();
     }
 
 }

@@ -12,7 +12,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class GithubTest extends TestBase {
 
     public void verifyGithubSlogan() {
-        HomePage homePage = new HomePage(driver);
+        HomePage homePage = new HomePage(getDriver());
         homePage.get();
         assertThat(homePage.getSloganText()).isEqualTo("Built for developers");
     }
