@@ -14,6 +14,12 @@ public class GithubTest extends TestBase {
     public void verifyGithubSlogan() {
         HomePage homePage = new HomePage(getDriver());
         homePage.get();
-        assertThat(homePage.getSloganText()).isEqualTo("Built for developers");
+        assertThat(homePage.getSloganText()).isEqualTo("Make your contribution");
+    }
+
+    public void verifyGithubSloganWithTypo() {
+        HomePage homePage = new HomePage(getDriver());
+        homePage.get();
+        assertThat(homePage.getSloganText()).isEqualTo("Make your contributions");
     }
 }
