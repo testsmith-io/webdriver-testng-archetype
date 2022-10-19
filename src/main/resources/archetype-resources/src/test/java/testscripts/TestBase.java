@@ -35,9 +35,7 @@ public abstract class TestBase {
                 new WebDriverLoggingListener(),
                 new SavePageSourceOnExceptionListener(originalDriver, "target/log/pagesources"),
                 new SaveScreenshotOnExceptionListener(originalDriver, "target/log/screenshots"),
-                new WebDriverLoggingListener(),
-                new HighlightElementsListener(),
-                new WebDriverWaitListener(originalDriver)
+                new HighlightElementsListener()
         ).decorate(originalDriver));
     }
 
