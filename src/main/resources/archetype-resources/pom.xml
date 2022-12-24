@@ -10,10 +10,9 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <webdrivermanager.version>5.3.0</webdrivermanager.version>
-        <selenium-java.version>4.5.0</selenium-java.version>
-        <testng.version>7.3.0</testng.version>
-        <logback-classic.version>1.4.3</logback-classic.version>
+        <selenium-java.version>4.7.2</selenium-java.version>
+        <testng.version>7.4.0</testng.version>
+        <logback-classic.version>1.4.5</logback-classic.version>
         <allure-testng.version>2.19.0</allure-testng.version>
         <owner.version>1.0.12</owner.version>
         <webdriver-event-listeners.version>0.6</webdriver-event-listeners.version>
@@ -30,11 +29,6 @@
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>io.github.bonigarcia</groupId>
-            <artifactId>webdrivermanager</artifactId>
-            <version>${webdrivermanager.version}</version>
-        </dependency>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>

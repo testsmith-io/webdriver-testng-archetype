@@ -9,17 +9,17 @@ import org.testng.annotations.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @Test
-public class GithubTest extends TestBase {
+public class ToolshopTest extends TestBase {
 
-    public void verifyGithubSlogan() {
+    public void verifySignInButton() {
         HomePage homePage = new HomePage(getDriver());
         homePage.get();
-        assertThat(homePage.getSloganText()).isEqualTo("Make your contribution");
+        assertThat(homePage.isSignInButtonDisplayed()).isTrue();
     }
 
-    public void verifyGithubSloganWithTypo() {
+    public void verifySignInButton_failOnPurpose() {
         HomePage homePage = new HomePage(getDriver());
         homePage.get();
-        assertThat(homePage.getSloganText()).isEqualTo("Make your contributions");
+        assertThat(homePage.isSignInButtonDisplayed()).isFalse();
     }
 }

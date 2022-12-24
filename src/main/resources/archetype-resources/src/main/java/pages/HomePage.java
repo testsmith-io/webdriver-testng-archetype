@@ -13,8 +13,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class HomePage extends AbstractPage<HomePage> {
 
-    @FindBy(className = "h1-mktg")
-    private WebElement slogan;
+    @FindBy(css = "[data-test='nav-sign-in']")
+    private WebElement signInButton;
 
     public HomePage(WebDriver driver) {
         super(driver);
@@ -28,12 +28,12 @@ public class HomePage extends AbstractPage<HomePage> {
 
     @Override
     protected void isLoaded() throws Error {
-        assertThat(driver.getTitle()).isEqualTo("GitHub: Where the world builds software · GitHub");
+        assertThat(driver.getTitle()).isEqualTo("Practice Software Testing - Toolshop - v5.0");
     }
 
-    @Step("Get slogan text")
-    public String getSloganText() {
-        return slogan.getText();
+    @Step("Is Sign In button displayed")
+    public boolean isSignInButtonDisplayed() {
+        return signInButton.isDisplayed();
     }
 
 }
