@@ -9,7 +9,7 @@
     <packaging>maven-archetype</packaging>
 
     <name>WebDriver TestNG Archetype</name>
-    <description>Generates a basic skeleton project with Selenium WebDriver, WebDrivermanager, TestNG and Allure
+    <description>Generates a basic skeleton project with Selenium WebDriver, TestNG and Allure
     </description>
     <url>https://github.com/testsmith-io/webdriver-testng-archetype</url>
 
