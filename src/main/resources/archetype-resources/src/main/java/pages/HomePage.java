@@ -20,7 +20,7 @@ public class HomePage extends AbstractPage<HomePage> {
         super(driver);
     }
 
-    @Step("Open the Github homepage")
+    @Step("Open the Practice Software Testing homepage")
     @Override
     protected void load() {
         driver.get(Environment.getProperties().url());

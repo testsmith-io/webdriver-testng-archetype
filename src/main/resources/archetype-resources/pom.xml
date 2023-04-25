@@ -10,15 +10,15 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <selenium-java.version>4.7.2</selenium-java.version>
+        <selenium-java.version>4.9.0</selenium-java.version>
         <testng.version>7.4.0</testng.version>
         <logback-classic.version>1.4.5</logback-classic.version>
-        <allure-testng.version>2.19.0</allure-testng.version>
+        <allure-testng.version>2.21.0</allure-testng.version>
         <owner.version>1.0.12</owner.version>
         <webdriver-event-listeners.version>0.6</webdriver-event-listeners.version>
 
         <aspectj.version>1.9.9.1</aspectj.version>
-        <assertj-core.version>3.23.1</assertj-core.version>
+        <assertj-core.version>3.24.2</assertj-core.version>
 
         <allure-maven.version>2.11.2</allure-maven.version>
         <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
