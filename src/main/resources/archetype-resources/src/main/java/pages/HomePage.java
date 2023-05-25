@@ -4,17 +4,16 @@
 package ${package}.pages;
 
 import io.qameta.allure.Step;
+import org.example.properties.Environment;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 import ${package}.properties.Environment;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class HomePage extends AbstractPage<HomePage> {
 
-    @FindBy(css = "[data-test='nav-sign-in']")
-    private WebElement signInButton;
+    private final By signInButton = By.cssSelector("[data-test='nav-sign-in']");;
 
     public HomePage(WebDriver driver) {
         super(driver);
@@ -33,7 +32,7 @@ public class HomePage extends AbstractPage<HomePage> {
 
     @Step("Is Sign In button displayed")
     public boolean isSignInButtonDisplayed() {
-        return signInButton.isDisplayed();
+        return driver.findElement(signInButton).isDisplayed();
     }
 
 }
