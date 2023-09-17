@@ -10,7 +10,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <selenium-java.version>4.10.0</selenium-java.version>
+        <selenium-java.version>4.12.1</selenium-java.version>
         <testng.version>7.4.0</testng.version>
         <logback-classic.version>1.4.5</logback-classic.version>
         <allure-testng.version>2.21.0</allure-testng.version>
