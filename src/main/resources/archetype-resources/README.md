@@ -9,6 +9,8 @@ This project is generated from an archetype. It exists out of TestNG, Selenium W
 
 ## Run tests in specific browser
 
+`mvn clean test -Dbrowser=chrome`
+
 `mvn clean test -Dbrowser=firefox`
 
 `mvn clean test -Dbrowser=edge`
