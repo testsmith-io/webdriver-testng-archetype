@@ -5,14 +5,11 @@ package ${package}.testscripts;
 
 import io.testsmith.support.listeners.*;
 import ${package}.utils.BrowserUtil;
-import ${package}.utils.ScreenshotListener;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.events.EventFiringDecorator;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Listeners;
 
-@Listeners(ScreenshotListener.class)
 public abstract class TestBase {
 
     private static final ThreadLocal<WebDriver> driver = new ThreadLocal<>();

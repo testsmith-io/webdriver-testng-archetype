@@ -31,7 +31,7 @@ public class BrowserUtil {
                 break;
             case FIREFOX_HEADLESS:
                 FirefoxOptions options = new FirefoxOptions();
-                options.setHeadless(true);
+                options.addArguments("-headless");
                 driver = new FirefoxDriver(options);
                 break;
         }

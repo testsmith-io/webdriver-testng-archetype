@@ -4,7 +4,6 @@
 package ${package}.pages;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.PageFactory;
 
 import java.time.Duration;
 
@@ -14,6 +13,5 @@ abstract class AbstractPageBase {
     public AbstractPageBase(WebDriver driver) {
         this.driver = driver;
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-        PageFactory.initElements(driver, this);
     }
 }
