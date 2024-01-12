@@ -14,7 +14,7 @@ public abstract class TestBase {
 
     private static final ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
-    public WebDriver getDriver() {
+    public static WebDriver getDriver() {
         return driver.get();
     }
 
