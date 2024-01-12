@@ -1,4 +1,4 @@
-package org.example.utils;
+package ${package}.utils;
 
 import io.qameta.allure.Allure;
 import io.qameta.allure.listener.TestLifecycleListener;
