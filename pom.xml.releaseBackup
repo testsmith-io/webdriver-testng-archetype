@@ -5,7 +5,7 @@
 
     <groupId>io.testsmith</groupId>
     <artifactId>webdriver-testng-archetype</artifactId>
-    <version>1.4.21.0-SNAPSHOT</version>
+    <version>1.4.16.3-SNAPSHOT</version>
     <packaging>maven-archetype</packaging>
 
     <name>WebDriver TestNG Archetype</name>
